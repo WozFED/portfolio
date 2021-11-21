@@ -1,0 +1,7 @@
+[
+  { "name": "About me", "icon": "clarity:home-solid", "link": "/about" },
+  { "name": "Skills", "icon": "dashicons:book", "link": "/skills" },
+  { "name": "Projects", "icon": "ant-design:project-filled", "link": "/projects" },
+  { "name": "Contact", "icon": "ant-design:phone-filled", "link": "/contact" },
+  { "name": "Tasks", "icon": "fluent:clipboard-task-list-ltr-20-filled", "link": "/tasks" }
+]
