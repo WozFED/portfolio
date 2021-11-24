@@ -15,13 +15,16 @@ body > div {
 * {
     padding: 0;
     margin: 0;
+    font-family:  'Montserrat', sans-serif;
 }
 
 .layout {
-    display: flex;
     height: 100%;
     &__content {
-        width: 100%;
-        display: inline;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

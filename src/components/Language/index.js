@@ -1,8 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Language = () =>{
-    return (
-        <div className = 'language'>Wybierz język</div>
+    const [show, setShow] = useState(true)
+    return ( 
+        <div className = 'language'
+        onClick = {() => setShow(!show)}> 
+        <div>
+        <p>Wybierz język</p>    
+        </div>
+        {show ? <div className = "language__chose">halo?</div> : 
+        null
+        }
+            
+        </div>
+        
     )
 }
 

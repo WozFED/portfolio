@@ -1,6 +1,11 @@
 .language {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    height: 5%;
+    position: absolute;
+    left: 0;
+    &__choose {
+        width: 100px;
+        height: 200px;
+        border: 1px solid black;
+    }
 }
