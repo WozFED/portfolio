@@ -1,16 +1,30 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import Layout from "../components/Layout"
-import { motion } from "framer-motion"
-import TextAnimateLogic from "../components/TextAnimateLogic"
+import { AnimatePresence, motion } from "framer-motion"
 import { graphql } from "gatsby"
+import {
+  BackDispatchContext,
+  BackStateContext,
+} from "../context/BackContextProvider"
 import Curriculum from "../components/Curriculum"
 
 const Home = ({ data }) => {
   const hi = "Hi"
   const name = "I am Patryk Woźniak"
   const who = "Beginner of Front End Developer"
+  const state = useContext(BackStateContext)
+  const dispatch = useContext(BackDispatchContext)
+  const [disabled, setDisabled] = useState(false)
 
-  const [show, setShow] = useState(false)
+  useEffect(() => {
+    if (state.show === true) {
+      setDisabled(true)
+      setTimeout(() => {
+        setDisabled(false)
+      }, 200)
+    }
+  }, [state.show])
+
   return (
     <Layout>
       <div className="home">
@@ -21,18 +35,25 @@ const Home = ({ data }) => {
             <h2>{name}</h2>
             <h2>{who}</h2>
           </div>
-          <div className = "home__bcard"> 
-          <div className = "home__card">
-            BLABLALBALBALBLA
-          </div>
-          <div className="home__buttons">
-            <button className="button-general">Klasyczne CV</button>
-            <button className="button-general">Kontakt</button>
-          </div>
+          <div className="home__bcard">
+            <div className="home__card">BLABLALBALBALBLA</div>
+            <div className="home__buttons">
+              <button
+                className="button-general"
+                onClick={() => dispatch({ type: "SHOW" })}
+                disabled={disabled}
+              >
+                Klasyczne CV
+              </button>
+              <button className="button-general">Kontakt</button>
             </div>
-         
+          </div>
         </div>
-        {show ? <Curriculum /> : null}
+        <AnimatePresence>
+          {state.show && (
+            <Curriculum />
+          )}
+        </AnimatePresence>
       </div>
     </Layout>
   )
