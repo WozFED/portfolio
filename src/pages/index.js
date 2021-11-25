@@ -28,32 +28,32 @@ const Home = ({ data }) => {
   return (
     <Layout>
       <div className="home">
-        <div className="home__photo"></div>
-        <div className="home__content">
-          <div className="home__content-text">
-            <h1>{hi},</h1>
-            <h2>{name}</h2>
-            <h2>{who}</h2>
-          </div>
-          <div className="home__bcard">
-            <div className="home__card">BLABLALBALBALBLA</div>
-            <div className="home__buttons">
-              <button
-                className="button-general"
-                onClick={() => dispatch({ type: "SHOW" })}
-                disabled={disabled}
-              >
-                Klasyczne CV
-              </button>
-              <button className="button-general">Kontakt</button>
+        <div className="home__photo">
+          <div className="home__photo-image"></div>
+        </div>
+        <div className="home__wrapper">
+          <div className="home__content">
+            <div className="home__content-text">
+              <h1>{hi},</h1>
+              <h2>{name}</h2>
+              <h2>{who}</h2>
+            </div>
+            <div className="home__bcard">
+              <div className="home__card">BLABLALBALBALBLA</div>
+              <div className="home__buttons">
+                <button
+                  className="button-general"
+                  onClick={() => dispatch({ type: "SHOW" })}
+                  disabled={disabled}
+                >
+                  Klasyczne CV
+                </button>
+                <button className="button-general">Kontakt</button>
+              </div>
             </div>
           </div>
+          <AnimatePresence>{state.show && <Curriculum />}</AnimatePresence>
         </div>
-        <AnimatePresence>
-          {state.show && (
-            <Curriculum />
-          )}
-        </AnimatePresence>
       </div>
     </Layout>
   )

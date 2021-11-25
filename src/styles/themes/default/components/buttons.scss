@@ -2,8 +2,11 @@
     &-general {
         width: 175px;
         height: 50px;
-        color: black;
+        color: white;
+        font-weight: 400;
+        background: linear-gradient(45deg, #008080 50%,#8B0F32 50%);
         font-size: 16px;
+        border: none;
         margin-top: 5px;
         &:disabled {
         background-color: yellow;
