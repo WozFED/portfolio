@@ -1,17 +1,16 @@
 import React, {useState} from 'react'
 
 const Language = () =>{
-    const [show, setShow] = useState(true)
     return ( 
-        <div className = 'language'
-        onClick = {() => setShow(!show)}> 
-        <div>
-        <p>Wybierz język</p>    
-        </div>
-        {show ? <div className = "language__chose">halo?</div> : 
-        null
-        }
-            
+        <div className = 'language'>
+        <ul>
+            <li>
+                "Wybierz język"
+            </li>
+            <li>
+                "Zmień motyw"
+            </li>
+        </ul>
         </div>
         
     )
