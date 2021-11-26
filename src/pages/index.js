@@ -8,12 +8,12 @@ import {
 } from "../context/BackContextProvider"
 import Curriculum from "../components/Curriculum"
 import TextAnimateLogic from "../components/TextAnimateLogic"
-import Delay from '../components/Delay'
+import Delay from "../components/Delay"
 
 const Home = ({ data }) => {
   const hi = "Hi"
   const name = "I am Patryk Woźniak"
-  const who = "Beginner of Front End Developer"
+  
   const state = useContext(BackStateContext)
   const dispatch = useContext(BackDispatchContext)
   const [disabled, setDisabled] = useState(false)
@@ -30,41 +30,51 @@ const Home = ({ data }) => {
   return (
     <Layout>
       <div className="home">
-        <motion.div 
-        initial = {{height: "0%", y: 0}}
-        animate = {{height: '100%', y: 0}}
-        transition = {{duration: 1}}
-        className="home__photo">
+        <motion.div
+          initial={{ height: "0%", y: 0 }}
+          animate={{ height: "100%", y: 0 }}
+          transition={{ duration: 1 }}
+          className="home__photo"
+        >
           <motion.div
-          initial = {{opacity:0}}
-          animate = {{opacity: 1}}
-          transition = {{delay: 0.75}}
-          className="home__photo-image"></motion.div>
-          </motion.div>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.75 }}
+            className="home__photo-image"
+          ></motion.div>
+        </motion.div>
         <div className="home__wrapper">
           <div className="home__content">
             <motion.div
-            initial = {{width: 0}}
-            animate = {{width: '100%'}}
-            transition = {{delay: 0.75, duration: 0.25}}
-             className="home__content-text">
-               <h2><Delay text = {hi} speed = {40}/></h2>
-              <h2><Delay text = {name} speed = {40}/></h2>
-              <h2><Delay text = {who} speed = {40}/></h2>
-              
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ delay: 0.75, duration: 0.25 }}
+              className="home__content-text"
+            >
+              <h2>
+                <Delay text={hi} speed={40} />
+              </h2>
+              <h2>
+                <Delay text={name} speed={40} />
+              </h2>
             </motion.div>
             <div className="home__bcard">
-              <motion.div 
-               initial = {{width: 0, height: 0}}
-               animate = {{width: '500px', height: "200px"}}
-               transition = {{delay: 0.75, duration: 0.25}}
-              className="home__card"><Delay text = {"BlaBLABLABLSDBASJDBASUDBAISUBDAISDBJAKSB"}
-              speed = {10} /></motion.div>
+              <motion.div
+                initial={{ width: 0, height: 0 }}
+                animate={{ width: "500px", height: "200px" }}
+                transition={{ delay: 0.75, duration: 0.25 }}
+                className="home__card"
+              >
+                <Delay
+                  text={"BlaBLABLABLSDBASJDBASUDBAISUBDAISDBJAKSB"}
+                  speed={10}
+                />
+              </motion.div>
               <div className="home__buttons">
                 <motion.button
-                initial = {{opacity: 0}}
-                animate = {{opacity: 1}}
-                transition = {{delay: 0.75}}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.75 }}
                   className="button-general"
                   onClick={() => dispatch({ type: "SHOW" })}
                   disabled={disabled}
@@ -72,10 +82,13 @@ const Home = ({ data }) => {
                   Klasyczne CV
                 </motion.button>
                 <motion.button
-                initial = {{opacity: 0}}
-                animate = {{opacity: 1}}
-                transition = {{delay: 0.75}}
-                className="button-general">Kontakt</motion.button>
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.75 }}
+                  className="button-general"
+                >
+                  Kontakt
+                </motion.button>
               </div>
             </div>
           </div>
