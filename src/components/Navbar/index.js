@@ -23,7 +23,11 @@ const Navbar = () => {
   const { nodes } = data.allNavbarJson
 
   return (
-    <div className="navbar">
+    <motion.div
+    initial = {{height:0}}
+    animate = {{height: "10%"}}
+    transition = {{duration: 0.25}}
+    className="navbar">
       <Language />
       <ul>
         {nodes.map((nav, id) => {
@@ -41,7 +45,7 @@ const Navbar = () => {
           )
         })}
       </ul>
-    </div>
+    </motion.div>
   )
 }
 

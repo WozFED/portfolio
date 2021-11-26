@@ -6,11 +6,14 @@ const TextAnimateLogic = props => {
   useEffect(() => {
 
       if (index < props.text.length) {
-      setTimeout(() => {
+       
+          setTimeout(() => {
         setFinalText(finalText + props.text[index])
         setIndex(index + 1)
       }, props.speed)
-      }
+       
+      
+      } 
  
     
   }, [index])
