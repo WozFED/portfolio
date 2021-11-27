@@ -8,7 +8,9 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-transformer-json`,
+    `gatsby-transformer-json`, 
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,5 +19,14 @@ module.exports = {
         ignore: [`**/\.*`]
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+
+      },
+    },
+   
   ],
 }
