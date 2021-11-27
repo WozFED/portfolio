@@ -4,12 +4,17 @@
         height: 50px;
         color: white;
         font-weight: 400;
-        background: linear-gradient(45deg, #008080 50%,#8B0F32 50%);
+        background: linear-gradient(135deg, #8B0F32 50%,#008080 50%);
+        background-size: 200% 200%;
+        background-position: 95% 0 ;
         font-size: 16px;
         border: none;
         margin-top: 5px;
-        &:disabled {
-        background-color: yellow;
+        transition: 0.25s all ease;
+        &:hover {
+            background-size: 200% 200%;
+            background-position: 25% 0 ;
+            cursor: pointer;
     }
     }
     

@@ -4,23 +4,24 @@ import { Icon } from '@iconify/react';
 import { motion } from "framer-motion";
 
 const NavList = () => {
-    const data = useStaticQuery(graphql`
-    query MyQuery {
-      allNavbarJson {
-        nodes {
-          name
-          link
-          icon
-          jsonId
-        }
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    allNavbarJson {
+      nodes {
+        name
+        link
+        icon
+        jsonId
       }
     }
-  `)
-  const { nodes } = data.allNavbarJson
+  }
+`)
+const { nodes } = data.allNavbarJson
     return (
         <ul>
         {nodes.map((nav, id) => {
           return (
+              
               <Link to = {`${nav.link}`}>
               <motion.li key={id}
               

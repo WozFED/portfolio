@@ -5,10 +5,10 @@ const Language = () =>{
         <div className = 'language'>
         <ul>
             <li>
-                "Wybierz język"
+            Wybierz język
             </li>
             <li>
-                "Zmień motyw"
+            Zmień
             </li>
         </ul>
         </div>
