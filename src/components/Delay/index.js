@@ -7,7 +7,7 @@ const Delay = (props) => {
     useEffect(()=>{
         setTimeout(()=>{
             setShow(true)
-        },750)
+        },props.delay)
     },[])
     return (
         show && <TextAnimateLogic text = {props.text} speed = {props.speed} />

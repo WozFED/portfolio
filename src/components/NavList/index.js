@@ -18,6 +18,9 @@ const NavList = () => {
 `)
 const { nodes } = data.allNavbarJson
     return (
+      <div className = "navbar__list">
+
+      
         <ul>
         {nodes.map((nav, id) => {
           return (
@@ -27,7 +30,6 @@ const { nodes } = data.allNavbarJson
               
               whileHover = {{scale: 1.2, originX: 0}}
               transition = {{type: "spring", stiffness: 500}}>
-                <Icon icon = {`${nav.icon}`}/>
               <p style = {{
                 borderBottom: window.location.pathname === `${nav.link}` ? '1px solid white' : null
               }}>{nav.name}</p>
@@ -36,7 +38,7 @@ const { nodes } = data.allNavbarJson
               </Link>
           )
         })}
-      </ul>
+      </ul></div>
     )
 }
 
