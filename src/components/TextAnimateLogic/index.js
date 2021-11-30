@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 
 const TextAnimateLogic = props => {
   const [finalText, setFinalText] = useState("")
@@ -7,7 +8,7 @@ const TextAnimateLogic = props => {
 
       if (index < props.text.length) {
        
-          setTimeout(() => {
+        setTimeout(() => {
         setFinalText(finalText + props.text[index])
         setIndex(index + 1)
       }, props.speed)
@@ -19,7 +20,9 @@ const TextAnimateLogic = props => {
   }, [index])
 
   return (
-    <>{finalText}</>
+    <>{finalText.split("").map(el => <motion.span
+    whileHover = {{color: 'gray', scale: 1.3}}
+    >{el}</motion.span>)}</>
   )
 }
 

@@ -26,15 +26,10 @@ const { nodes } = data.allNavbarJson
           return (
               
               <Link to = {`${nav.link}`}>
-              <motion.li key={id}
-              
-              whileHover = {{scale: 1.2, originX: 0}}
-              transition = {{type: "spring", stiffness: 500}}>
-              <p style = {{
-                borderBottom: window.location.pathname === `${nav.link}` ? '1px solid white' : null
-              }}>{nav.name}</p>
+              <li key={id}>
+              <p>{nav.name}</p>
                 
-              </motion.li>
+              </li>
               </Link>
           )
         })}

@@ -42,10 +42,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      {background.show && <div className = "background"
-      style = {{top: background.top }}>
-        <h1>Hi, I am Patryk Woźniak and this is my Portoflio</h1>
-      </div>}
+      
      
       {state.show && (
         <div
@@ -55,7 +52,7 @@ const Layout = ({ children }) => {
         ></div>
       )}
       <Navbar />
-      <div className="layout__content">{children}</div>
+      {children}
     </div>
   )
 }
