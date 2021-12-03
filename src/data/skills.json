@@ -1,11 +1,11 @@
 [
-  { "name": "HTML", "box": 1, "howMany": "90%" },
-  { "name": "CSS", "box": 1, "howMany": "90%" },
-  { "name": "JavaScript", "box": 1, "howMany": "80%" },
-  { "name": "TypeScript", "box": 1, "howMany": "40%" },
-  { "name": "Sass", "box": 1, "howMany": "80%" },
-  { "name": "React", "box": 2, "howMany": "90%" },
-  { "name": "Gatsby", "box": 2, "howMany": "80%" },
-  { "name": "CMS", "box": 2, "howMany": "70%" },
-  { "name": "GIMP", "box": 2, "howMany": "30%" }
+  { "name": "HTML", "box": 1, "howMany": 90 },
+  { "name": "CSS", "box": 1, "howMany": 90 },
+  { "name": "JavaScript", "box": 1, "howMany": 80 },
+  { "name": "TypeScript", "box": 1, "howMany": 40 },
+  { "name": "Sass", "box": 1, "howMany": 80 },
+  { "name": "React", "box": 2, "howMany": 90 },
+  { "name": "Gatsby", "box": 2, "howMany": 80 },
+  { "name": "CMS", "box": 2, "howMany": 70 },
+  { "name": "GIMP", "box": 2, "howMany": 30 }
 ]
