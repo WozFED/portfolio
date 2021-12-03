@@ -29,9 +29,7 @@ const Skills = ({data}) => {
             
          <SkillBox initial = {-1500}
          array = {lang}/>
-         <div>
-             Gdie ja bede?
-         </div>
+       
          <SkillBox initial = {1500}
          array = {framework} />
           

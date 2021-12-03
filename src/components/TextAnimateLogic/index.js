@@ -20,9 +20,7 @@ const TextAnimateLogic = props => {
   }, [index])
 
   return (
-    <>{finalText.split("").map(el => <motion.span
-    whileHover = {{color: 'gray', scale: 1.3}}
-    >{el}</motion.span>)}</>
+    <>{finalText}</>
   )
 }
 

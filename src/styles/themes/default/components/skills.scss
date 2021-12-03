@@ -4,7 +4,6 @@
   justify-content: center;
   &__wrapper {
     width: 1400px;
-    margin: 25px 0;
   }
   &__title {
     h2 {
@@ -13,25 +12,23 @@
     }
   }
   &__container {
-    margin-top: 50px;
     width: 100%;
-    height: 800px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
   }
   &__box {
     width: 60%;
-    position: absolute;
     background-color:  white;
     border: 2px solid #aa4b41;
     font-weight: 500;
     font-size: 20px;
     &:last-child {
       background-color: white;
-      top: 40%;
+      top: 35%;
       right: 0;
       z-index: 1;
+      float:right;
     }
   }
   ul {

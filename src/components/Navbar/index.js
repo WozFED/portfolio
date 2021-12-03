@@ -6,7 +6,9 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Navbar = () => {
   return (
-    <motion.div className="navbar">
+    <div
+    
+    className="navbar">
       <div className="navbar__wrapper">
         <div className="navbar__title">
           <div> <h1>Patryk Woźniak</h1>
@@ -16,7 +18,7 @@ const Navbar = () => {
         </div>
         <NavList />
       </div>
-    </motion.div>
+    </div>
   )
 }
 
