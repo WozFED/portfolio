@@ -9,8 +9,10 @@ const Navbar = () => {
     <motion.div className="navbar">
       <div className="navbar__wrapper">
         <div className="navbar__title">
-          <h1>Patryk Woźniak</h1>
+          <div> <h1>Patryk Woźniak</h1>
           <p>Web Developer</p>
+            </div>
+         
         </div>
         <NavList />
       </div>

@@ -6,14 +6,16 @@ import Navbar from '../Navbar';
 const Header = scroll => {
     return (
         <div className="header">
+       
         <div className="header__wrapper">
-          
-          <div className = "header__content">
-            <div className = "header__about">
-            <div className = "header__photo">
+           <div className = "header__photo">
+             
             <div className = "photo">
-              </div>
+
             </div>
+            </div>
+         
+          
             <div className = "header__text">
               <div>
                 <h2>Hi there,</h2>
@@ -31,9 +33,11 @@ const Header = scroll => {
             </div>
             <div className = "header__social">
               <div className = "header__media">
-                <p>Facebokk</p>
+                <div> <p>Facebokk</p>
               <p>LinkdeIn</p>
-              <p>Bitbucket</p>
+              <p>Bitbucket</p></div>
+
+               
                 </div>
              
             </div>
@@ -42,8 +46,8 @@ const Header = scroll => {
            
           </div>
           
-        </div>
-      </div>
+      
+    
     )
     
 }
