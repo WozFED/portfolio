@@ -1,6 +1,5 @@
 import React from "react"
 import { motion } from "framer-motion"
-import Language from "../Language"
 import NavList from "../NavList"
 import { useStaticQuery, graphql, Link } from "gatsby"
 

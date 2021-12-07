@@ -1,0 +1,19 @@
+.template {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+        width: 1400px;
+        padding: 25px 0;
+        h2 {
+            font-size: 40px;
+        }
+    }
+    &__image {
+        padding: 25px 0;
+        border-bottom: 1px solid black;
+    }
+    &__text {
+        padding: 25px 0;
+    }
+}

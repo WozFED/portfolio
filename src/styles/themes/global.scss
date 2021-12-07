@@ -23,7 +23,7 @@ p, h1, h2 {
 .layout {
     background-color: white;
    overflow-y: hidden;
-    
+    position: relative;
     &__content {
         width: 100%;
         display: flex;

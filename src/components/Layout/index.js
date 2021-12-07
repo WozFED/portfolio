@@ -10,35 +10,8 @@ const Layout = ({ children }) => {
   const state = useContext(BackStateContext)
   const exit = useContext(BackDispatchContext)
   const [pEvent, setPEvent] = useState("none")
-  const [background, setBackground] = useState({
-    top: 0,
-    show: true,
-  })
-  // useEffect(() => {
-  //   if (state.show) {
-  //     setTimeout(() => {
-  //       setPEvent("all")
-  //     }, 1500)
-  //   }
-  //   if (!state.show) {
-  //     setPEvent("none")
-  //   }
-  // }, [state.show])
-
-  useEffect(()=>{
-    setTimeout(()=>{
-      setBackground({
-        top: -1000,
-        show: true
-      } )
-      setTimeout(()=>{
-        setBackground({
-          top: -1000,
-          show: false
-        })
-      }, 1500)
-    },1500)
-  },[])
+  
+  
 
   return (
     <div className="layout">

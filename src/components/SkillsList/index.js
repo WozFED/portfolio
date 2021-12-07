@@ -1,54 +1,40 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
+import { Icon } from '@iconify/react'
+import { motion } from 'framer-motion'
 
 const SkillsList = () => {
+    const data = useStaticQuery(graphql`
+    query Skills {
+        allSkillsJson {
+        nodes {
+          howMany
+          name
+          icon
+        }
+      }
+    }
+    
+    `)
+
+    const { nodes } = data.allSkillsJson
+    console.log(nodes)
     return (
-        <div className = "skills">
-            <div className = "skills__wrapper">
-        <div className = "skills__content lang">
+        <div className = "skills2">
+        <h2>My Tools</h2>
         <ul>
-            <li><div className = "skills__element">
-                <p>HTML</p>
-                <div className = "skills__element-bar">
-                <div></div>
-                </div>
-                </div></li>
-                <li><div className = "skills__element">
-                <p>CSS</p>
-                <div className = "skills__element-bar">
-                <div></div>
-                </div>
-                </div></li>
-                <li><div className = "skills__element">
-                <p>JS</p>
-                <div className = "skills__element-bar">
-                <div></div>
-                </div>
-                </div></li>
-
-        </ul></div>
-        
-        <div className = "skills__content frameworks">
-        <ul>
-            <li><div className = "skills__element">
-                <p>HTML</p>
-                <div className = "skills__element-bar">
-                <div></div>
-                </div>
-                </div></li>
-                <li><div className = "skills__element">
-                <p>CSS</p>
-                <div className = "skills__element-bar">
-                <div></div>
-                </div>
-                </div></li>
-                <li><div className = "skills__element">
-                <p>JS</p>
-                <div className = "skills__element-bar">
-                <div></div>
-                </div>
-                </div></li>
-
-        </ul></div></div></div>
+            {nodes.map(el => {
+                return (
+                  <motion.div
+                  whileHover = {{scale: 1.2}}
+                  transition = {{type: "spring", stiffness: 700}}><li
+                  ><p>{el.name}</p><Icon icon = {`${el.icon}`}/></li>
+                    </motion.div>
+                    
+                )
+            })}
+        </ul>
+      </div>
     )
 }
 
