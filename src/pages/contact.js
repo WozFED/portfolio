@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
@@ -26,11 +25,11 @@ const ContactPage = ({data}) => {
                   </tr>
                   <tr>
                     <td><p>Facebook:</p></td>
-                    <td><p><a href = "https://www.facebook.com/patryk.wozniak.737" target = "_blank" >Click me!</a></p></td>
+                    <td><p><a href = "https://www.facebook.com/patryk.wozniak.737" target = "_blank" rel="noreferrer" >Click me!</a></p></td>
                   </tr>
                   <tr>
                     <td><p>Linkdein</p></td>
-                    <td><p><a href = "https://www.linkedin.com/in/patryk-wo%C5%BAniak-5a5857170/" target = "_blank" >Click me!</a></p></td>
+                    <td><p><a href = "https://www.linkedin.com/in/patryk-wo%C5%BAniak-5a5857170/" target = "_blank" rel="noreferrer" >Click me!</a></p></td>
                   </tr>
                 </table>
               </div>

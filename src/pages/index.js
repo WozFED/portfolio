@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext, useRef } from "react"
+import React from "react"
 import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
+import {Link } from "gatsby"
 import pdf from "../../static/CV_Patryk_Woźniak (3).pdf"
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
             things
           </p>
           <div className="home__button">
-            <a href={pdf} target="_blank">
+            <a href={pdf} target="_blank" rel="noreferrer">
               <button className="button__home">Classic CV</button>
             </a>
             <Link to="/contact">

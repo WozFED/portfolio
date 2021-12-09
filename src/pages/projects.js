@@ -32,7 +32,7 @@ const Projects = ({data}) => {
                                     </div>
                                     
                                     <Img
-                                    className = "projects__img"
+                                    className = "page__img"
                                     fluid = {el.frontmatter.featuredImg.childImageSharp.fluid} />
                                   </Link></motion.div>
                               
