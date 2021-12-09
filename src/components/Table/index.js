@@ -19,6 +19,8 @@ const Table = props => {
               pwozniakgda@gmail.com
             </p>
           </td>
+          </tr>
+          <tr>
           <td>
             <p>Number:</p>
           </td>
@@ -29,6 +31,7 @@ const Table = props => {
             </p>
           </td>
         </tr>
+        <tr>
         <td>
             <p>Facebook:</p>
           </td>
@@ -38,6 +41,7 @@ const Table = props => {
               <a href = "" target = "_blank">Click me!</a>
             </p>
           </td>
+          </tr>
       </table>
     </motion.div>
   )
