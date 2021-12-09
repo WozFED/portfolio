@@ -1,10 +1,5 @@
-import React, { useContext, useState, useEffect } from "react"
+import React from "react"
 import Navbar from "../Navbar"
-import {
-  BackStateContext,
-  BackDispatchContext,
-} from "../../context/BackContextProvider"
-import { motion } from "framer-motion"
 
 const Layout = ({ children }) => {
   

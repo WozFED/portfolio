@@ -22,7 +22,7 @@ const Home = () => {
             things
           </p>
           <div className="home__button">
-            <a href={pdf} target="_blank" rel="noreferrer">
+            <a href={pdf} target="_blank" >
               <button className="button__home">Classic CV</button>
             </a>
             <Link to="/contact">

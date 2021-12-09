@@ -13,7 +13,7 @@ const Projects = ({data}) => {
             <div className = "page">
                 <div className = "page__wrapper">
                     <div className = "header">
-                    <h2><TextAnimateLogic text= {"Projekty"} speed = {50} /></h2>
+                    <h2><TextAnimateLogic text= {"Projects"} speed = {50} /></h2>
                     <p><TextAnimateLogic text = {"During course i got 3 projects to do, and on this page u can choose one, to check."} speed = {25} /></p>
                     </div>
                     {
