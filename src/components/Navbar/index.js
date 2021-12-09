@@ -37,7 +37,7 @@ const { nodes } = data.allNavbarJson
                 whileHover = {{scale: 1.2, originX: 0}
                 }>
 
-              <li style = {{borderBottom: window.location.pathname === nav.link ? '1px solid white' : null}}key={id}>
+              <li key={id}>
               <p>{nav.name}</p>
                 
               </li>
