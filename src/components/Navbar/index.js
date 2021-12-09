@@ -32,7 +32,8 @@ const { nodes } = data.allNavbarJson
         {nodes.map((nav, id) => {
           return (
               
-              <Link to = {`${nav.link}`}>
+              <Link to = {`${nav.link}`}
+              activeClassName = "current">
                 <motion.div
                 whileHover = {{scale: 1.2, originX: 0}
                 }>

@@ -1,19 +1,41 @@
 .template {
     width: 100%;
     display: flex;
-    justify-content: center;
-    &__wrapper {
-        width: 1400px;
-        padding: 25px 0;
-        h2 {
-            font-size: 40px;
-        }
-    }
+    flex-wrap: wrap;
+    justify-content:center ;
     &__image {
-        padding: 25px 0;
-        border-bottom: 1px solid black;
+        width: 80%;
+        transition: 2s all;
+        picture > img {
+            transition: all 0.25s ease !important;
+        }
+        picture > img:hover {
+                width: 110% !important;
+                height: 110% !important;
+            
+        }
     }
     &__text {
         padding: 25px 0;
+    }
+    &__button {
+        width: 50%;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__description{
+        padding-left: 25px;
+        h2 {
+            padding: 10px 0;
+        }
+        p:last-child {
+            padding-bottom: 50px;
+        }
+        ul {
+            
+            padding: 10px 15px;
+            padding-bottom: 50px;
+        }
     }
 }
