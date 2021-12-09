@@ -1,5 +1,4 @@
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby"
 import { Icon } from "@iconify/react"
 import { motion } from 'framer-motion'
 

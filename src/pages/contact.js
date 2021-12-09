@@ -15,11 +15,24 @@ const ContactPage = ({data}) => {
                 <p>Here many ways to contact with me</p>
               </div>
               <div className = "page__contact">
-              
-              <p onClick = {() => window.open('mailto:pwozniakgda@gmail.com?subject=Job__offer')}>Adres e-mail: pwozniakgda@gmail.com</p>
-              <p>Phone number: 511-500-066</p>
-              <p>Facebook: <a href = "https://www.facebook.com/patryk.wozniak.737" target = "_blank" >patryk.wozniak.737</a></p>
-              <p>Linkdein: Trzeba założyć</p>
+                <table className = "table">
+                  <tr>
+                    <td><p>Adres e-mail:</p></td>
+                    <td><p onClick = {() => window.open('mailto:pwozniakgda@gmail.com?subject=Job__offer')}>pwozniakgda@gmail.com</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Phone number:</p></td>
+                    <td><p>511-500-066</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Facebook:</p></td>
+                    <td><p><a href = "https://www.facebook.com/patryk.wozniak.737" target = "_blank" >Click me!</a></p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Linkdein</p></td>
+                    <td><p><a href = "https://www.linkedin.com/in/patryk-wo%C5%BAniak-5a5857170/" target = "_blank" >Click me!</a></p></td>
+                  </tr>
+                </table>
               </div>
              
             </div>

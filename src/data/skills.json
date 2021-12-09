@@ -6,5 +6,10 @@
   { "name": "Sass",  "icon": "logos:sass" },
   { "name": "React",  "icon": "logos:react" },
   { "name": "Gatsby", "icon": "logos:gatsby" },
-  { "name": "CMS",  "icon": "logos:contentful" }
+  { "name": "CMS",  "icon": "logos:contentful" },
+  {"name": "Cypress", "icon": "logos:cypress"},
+  {"name": "Chrome Dev Tools", "icon": "grommet-icons:chrome"},
+  {"name": "Bitbucket", "icon": "logos:bitbucket"},
+  {"name": "GIMP", "icon": "simple-icons:gimp"},
+  {"name": "MD", "icon": "bx:bxs-file-md"}
 ]

@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { motion } from "framer-motion"
+import { Icon } from "@iconify/react"
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
@@ -48,9 +49,13 @@ const { nodes } = data.allNavbarJson
       </div>
       <div className = "navigation__social">
         <ul>
-          <li>Facebook</li>
-          <li>Facebook</li>
-          <li>Facebook</li>
+          <li><a href = "https://www.codewars.com/users/WozFED/completed_solutions" target = "_blank">
+            <Icon icon = "cib:codewars" 
+            /></a></li>
+            
+          <li><a href = "https://www.facebook.com/patryk.wozniak.737" target = "_blank"><Icon icon = "akar-icons:facebook-fill" /></a> </li>
+          <li><a href = "https://www.linkedin.com/in/patryk-wo%C5%BAniak-5a5857170/" target = "_blank" >
+            <Icon icon = "cib:linkedin-in" /></a></li>
         </ul>
       </div>
     </div>
