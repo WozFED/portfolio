@@ -12,7 +12,6 @@
   left: 0;
   &__photo {
     height: 45%;
-    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,4 +73,15 @@
 
 .current {
   border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 830px) {
+    .navigation {
+      &__image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+    }
 }
