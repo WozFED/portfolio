@@ -1,44 +1,19 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Img from 'gatsby-image';
+import Header from '../components/Header';
 import { graphql, Link } from 'gatsby';
-import { motion } from 'framer-motion';
-import TextAnimateLogic from '../components/TextAnimateLogic';
+import Project from '../components/Project';
 
 const Projects = ({data}) => {
     const projects = data.allMarkdownRemark.nodes
-    console.log(projects)
     return (
         <Layout>
             <div className = "page">
                 <div className = "page__wrapper">
-                    <div className = "header">
-                    <h2><TextAnimateLogic text= {"Projects"} speed = {50} /></h2>
-                    <p><TextAnimateLogic text = {"During course i got 3 projects to do, and on this page u can choose one, to check."} speed = {25} /></p>
-                    </div>
-                    {
-                        projects.map((el, id) =>{
-                            return (
-                               
-                                <motion.div
-                                initial = {{x: -100}}
-                                animate = {{x: 0}}
-                                className = "page__container">
-                                    <Link to = {`/${el.frontmatter.slug}`}>
-                                    <div>
-
-                                    <h3>Projekt #{id+1}</h3>
-                                    <p>{el.frontmatter.title}</p>
-                                    </div>
-                                    
-                                    <Img
-                                    className = "page__img"
-                                    fluid = {el.frontmatter.featuredImg.childImageSharp.fluid} />
-                                  </Link></motion.div>
-                              
-                            )
-                        })
-                    }
+                  <Header h2 = {"Projects"}
+                  p = {"During course i got 3 projects to do, and on this page u can choose one, to check."}
+                    />
+                  <Project projects = {projects} />
                 </div>
             </div>
         </Layout>

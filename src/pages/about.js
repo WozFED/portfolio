@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Icon } from "@iconify/react"
 import Tools from '../components/Tools'
 import TextAnimateLogic from '../components/TextAnimateLogic'
+import Header from "../components/Header"
 
 const About = ({ data }) => {
   const focus = data.focus.nodes
@@ -15,14 +16,9 @@ const About = ({ data }) => {
     <Layout>
       <div className="page about">
         <div className = "page__wrapper">
-
-        <div className="header">
-          <h2><TextAnimateLogic text ={"About me"} speed = {50} /></h2>
-          <p>
-            <TextAnimateLogic text={"This is page shows you what can I, what am i focus and general information about me."}
-            speed = {25} />
-          </p>
-        </div>
+        <Header h2 = {"About me"}
+        p = {"This is page shows you what can I, what am i focus and general information about me."}/>
+        
         <Tools array = {focus} class = {null} />
        <Tools array = {tools}/>
         </div>
