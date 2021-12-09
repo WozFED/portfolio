@@ -20,22 +20,7 @@ const Table = props => {
             </p>
           </td>
         </tr>
-        {props.table.map((el, id) => {
-          return (
-            <tr key={id}>
-              <td>
-                <p>{el.title}</p>
-              </td>
-              <td>
-                <p>
-                  <a href={el.a} target="_blank" rel="noreferrer">
-                    {el.name}
-                  </a>
-                </p>
-              </td>
-            </tr>
-          )
-        })}
+       
       </table>
     </motion.div>
   )

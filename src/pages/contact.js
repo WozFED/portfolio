@@ -20,14 +20,3 @@ const ContactPage = ({ data }) => {
 
 export default ContactPage
 
-export const query = graphql`
-  query Table {
-    allContactJson {
-      nodes {
-        a
-        name
-        title
-      }
-    }
-  }
-`
