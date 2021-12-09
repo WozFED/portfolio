@@ -17,5 +17,11 @@
             background-position: 190% 100%;
         }
     }
-    
+    &__home {
+        width: 150px;
+        height: 50px;
+        border: 1px solid black;
+        background-color: transparent;
+        text-align: center;
+    }
 }

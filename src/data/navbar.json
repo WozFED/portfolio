@@ -1,6 +1,5 @@
 [
-  { "name": "About", "icon": "clarity:home-solid", "link": "/", "id": 0 },
-  { "name": "Skills", "icon": "dashicons:book", "link": "/skills", "id": 1 },
+  { "name": "About", "icon": "clarity:home-solid", "link": "/about", "id": 0 },
   { "name": "Projects", "icon": "ant-design:project-filled", "link": "/projects", "id": 2 },
   { "name": "Contact", "icon": "ant-design:phone-filled", "link": "/contact", "id": 3 },
   { "name": "Tasks", "icon": "fluent:clipboard-task-list-ltr-20-filled", "link": "/tasks", "id": 4 }

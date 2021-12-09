@@ -1,10 +1,10 @@
 [
-  { "name": "HTML", "howMany": 90, "icon": "logos:html-5" },
-  { "name": "CSS",  "howMany": 90, "icon": "akar-icons:css-fill" },
-  { "name": "JavaScript", "howMany": 80, "icon": "akar-icons:javascript-fill" },
-  { "name": "TypeScript", "howMany": 40, "icon": "cib:typescript" },
-  { "name": "Sass", "howMany": 80, "icon": "logos:sass" },
-  { "name": "React", "howMany": 90, "icon": "logos:react" },
-  { "name": "Gatsby", "howMany": 80, "icon": "logos:gatsby" },
-  { "name": "CMS", "howMany": 70, "icon": "logos:contentful" }
+  { "name": "HTML","icon": "logos:html-5"},
+  { "name": "CSS", "icon": "akar-icons:css-fill" },
+  { "name": "JavaScript", "icon": "akar-icons:javascript-fill" },
+  { "name": "TypeScript", "icon": "cib:typescript" },
+  { "name": "Sass",  "icon": "logos:sass" },
+  { "name": "React",  "icon": "logos:react" },
+  { "name": "Gatsby", "icon": "logos:gatsby" },
+  { "name": "CMS",  "icon": "logos:contentful" }
 ]

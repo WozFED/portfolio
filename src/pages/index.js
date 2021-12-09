@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useContext, useRef } from "react"
 import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Header from '../components/Header'
-import SkillsList from "../components/SkillsList"
-import Projects from "../components/Projects"
-import Contact from "../components/Contact"
+import { graphql, Link } from "gatsby"
 
 const Home = () => {
   
@@ -12,12 +8,24 @@ const Home = () => {
 
   return (
     <Layout>
-      <Header contact = {setContact}/>
-      <SkillsList />
-      <Projects />
-      {
-        contact && <Contact contact = {setContact} />
-      }
+      <div className = "home">
+        
+        <div className = "home__header">
+        <h1>Hi, I am Patryk Woźniak</h1>
+        <p>Still trying to improve my skills doing JS exercsies,
+          creating small projects that not ready to show.</p>
+         <p>Im setting goals in programming and all the time trying to be better. </p>
+         <p> The job could give me more experience and learn me a lot of new content</p>
+         <button className = "button__home">
+          Klasyczne CV
+        </button>
+        <button className = "button__home">
+          Kontakt
+        </button>
+        </div>
+        
+      </div>
+      
     </Layout>
   )
 }

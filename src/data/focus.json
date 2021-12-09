@@ -1,0 +1,21 @@
+[{
+    "name": "Responsive",
+    "icon": "mdi:responsive",
+    "description": "You can open this even on your smartphone"
+},
+{
+    "name": "Fast",
+    "icon": "bi:lightning-fill",
+    "description": "Target is more then 90% in lightouse tool"
+},
+{
+    "name": "Animation",
+    "icon": "whh:lifefull",
+    "description": "Trying to make my sites live"
+},
+{
+    "name": "DRY",
+    "icon": "mdi:hair-dryer",
+    "description": "Not repeat myself and not practice unecessary code"
+}
+]

@@ -1,37 +1,30 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
 const ContactPage = ({data}) => {
     
 
     return (
-        <div className = "header2">
-          <div className = "header2__wrapper">
-            <div className = "navigation">
-            <ul>
-              <li>About</li>
-              <li>Projects</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div className = "content">
-            <div className = "content__wrapper">
-              <div className = "content__title">
-              <h1>Patryk</h1>
+        <Layout>
+          <div className = "page ">
+            <div className = "page__wrapper contact">
+              <div className = "header">
+                <h2>Contact me</h2>
+                <p>Here many ways to contact with me</p>
               </div>
-              <div className = "content__box">
-                <h2>Woźniak</h2>
+              <div className = "page__contact">
+              
+              <p onClick = {() => window.open('mailto:pwozniakgda@gmail.com?subject=Job__offer')}>Adres e-mail: pwozniakgda@gmail.com</p>
+              <p>Phone number: 511-500-066</p>
+              <p>Facebook: <a href = "https://www.facebook.com/patryk.wozniak.737" target = "_blank" >patryk.wozniak.737</a></p>
+              <p>Linkdein: Trzeba założyć</p>
               </div>
              
-              
             </div>
-            
           </div>
-          </div>
-
-          
-        </div>
+        </Layout>
             
     )
 }
