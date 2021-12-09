@@ -15,9 +15,6 @@ const Table = props => {
           </td>
           <td>
             <p
-              onClick={() =>
-                window.open("mailto:pwozniakgda@gmail.com?subject=Job__offer")
-              }
             >
               pwozniakgda@gmail.com
             </p>
