@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { motion } from "framer-motion"
 import { Icon } from "@iconify/react"
+import {StaticImage} from 'gatsby-plugin-image'
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +23,7 @@ const { nodes } = data.allNavbarJson
       <Link to = "/"
       className = "navigation__photo">
         <div className = "navigation__image">
-
+        <StaticImage src = "../../images/portret.jpg" />
         </div>
         <h2>Patryk Woźniak</h2>
         <p>Web Developer</p>

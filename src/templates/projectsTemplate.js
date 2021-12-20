@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import React from 'react'
 import Layout from '../components/Layout';
 import Img from 'gatsby-image'
@@ -8,7 +8,7 @@ import Header from '../components/Header';
 
 const ProjectsTemplate = ({data}) => {
     const {html} = data.markdownRemark
-    const {title,icons,  featuredImg} = data.markdownRemark.frontmatter
+    const {title, relative,  featuredImg} = data.markdownRemark.frontmatter
     return (
       <Layout>
         <div className = "page">
@@ -20,10 +20,14 @@ const ProjectsTemplate = ({data}) => {
             <Img fluid = {featuredImg.childImageSharp.fluid} />
             </div>
             <div className = "template__button">
-              <motion.button
-              animate = {{scale: [1.2, 1, 1.2]}}
+              <a href = {relative}
+              target = "_blank">
+                <motion.button
+              animate = {{scale: [1.05, 1, 1.05]}}
               transition = {{repeat: Infinity}}
               className = "button__template">Wejdź i sprawdź</motion.button>
+              </a>
+              
             </div>
             
             <div

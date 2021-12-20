@@ -34,7 +34,10 @@
         color: white;
         border: none;
         outline: none;
-        background-color: rgb(18, 18, 92)
+        background-color: rgb(18, 18, 92);
+        &:hover {
+            cursor: pointer;
+        }
       
     }
         
