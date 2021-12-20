@@ -17,7 +17,7 @@ const About = ({ data }) => {
       <div className="page about">
         <div className = "page__wrapper">
         <Header h2 = {"About me"}
-        p = {"This is page shows you what can I, what am i focus and general information about me."}/>
+        p = {"This is page is about my skills"}/>
         
         <Tools array = {focus} class = {null} />
        <Tools array = {tools}/>

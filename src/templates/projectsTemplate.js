@@ -13,7 +13,7 @@ const ProjectsTemplate = ({data}) => {
       <Layout>
         <div className = "page">
             <div className = "page__wrapper">
-            <Header h2 = {title} p = {"Projekt stworzony podczas realizowania kursu Easy-Code"} />
+            <Header h2 = {title} p = {"Project was created for course Easy-Code"} />
             <div className = "template">
               <div 
             className = "template__image">
