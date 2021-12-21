@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import {Link } from "gatsby"
-import pdf from "../../static/CV_Patryk_Woźniak (3).pdf"
+import pdf from "../../static/CV_Patryk_Woźniak (1).pdf"
 
 const Home = () => {
   return (

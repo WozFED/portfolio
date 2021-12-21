@@ -16,7 +16,7 @@ const Project = (props) => {
                         <Link to = {`/${el.frontmatter.slug}`}>
                         <div>
 
-                        <h3>Projekt #{id+1}</h3>
+                        <h3>Project #{id+1}</h3>
                         <p>{el.frontmatter.title}</p>
                         </div>
                         

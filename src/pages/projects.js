@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Header from '../components/Header';
-import { graphql, Link } from 'gatsby';
+import { graphql} from 'gatsby';
 import Project from '../components/Project';
 
 const Projects = ({data}) => {

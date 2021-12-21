@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from "gatsby"
-import { Icon } from "@iconify/react"
 import Tools from '../components/Tools'
-import TextAnimateLogic from '../components/TextAnimateLogic'
 import Header from "../components/Header"
 
 const About = ({ data }) => {

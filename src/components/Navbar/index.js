@@ -23,7 +23,7 @@ const { nodes } = data.allNavbarJson
       <Link to = "/"
       className = "navigation__photo">
         <div className = "navigation__image">
-        <StaticImage src = "../../images/portret.jpg" />
+        <StaticImage src = "../../images/portret.jpg" alt = "Photo" />
         </div>
         <h2>Patryk Woźniak</h2>
         <p>Web Developer</p>
@@ -34,7 +34,8 @@ const { nodes } = data.allNavbarJson
           return (
               
               <Link to = {`${nav.link}`}
-              activeClassName = "current">
+              activeClassName = "current"
+              key = {id}>
                 <motion.div
                 whileHover = {{scale: 1.2, originX: 0}
                 }>

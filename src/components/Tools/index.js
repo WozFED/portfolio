@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 
 const Tools = props => {
-    console.log(props.array.length)
     return (
        <motion.div
        initial = {{x: -100}}

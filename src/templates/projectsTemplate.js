@@ -1,8 +1,7 @@
-import { graphql, Link } from 'gatsby';
+import { graphql} from 'gatsby';
 import React from 'react'
 import Layout from '../components/Layout';
 import Img from 'gatsby-image'
-import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 
@@ -25,7 +24,7 @@ const ProjectsTemplate = ({data}) => {
                 <motion.button
               animate = {{scale: [1.05, 1, 1.05]}}
               transition = {{repeat: Infinity}}
-              className = "button__template">Wejdź i sprawdź</motion.button>
+              className = "button__template">Check it!</motion.button>
               </a>
               
             </div>
