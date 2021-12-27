@@ -1,4 +1,7 @@
 @media screen and (max-width: 850px) {
+   .gatsby-image-wrapper-constrained{
+        display: block
+    }
     .navigation {
       &__image {
         width: 150px;
