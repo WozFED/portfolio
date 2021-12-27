@@ -4,7 +4,7 @@
     margin-left: 25vw;
     justify-content:center;
     &__wrapper {
-        width: 90%;
+        width: 95%;
         background-color: white;
         box-shadow: 0 0 7px black;
     }
@@ -89,7 +89,8 @@
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center; padding-left: 25px;
+    justify-content: center; 
+    padding: 0 25px;
     h2{
         font-size: 35px;
        
@@ -110,6 +111,3 @@
     }
 }
 
-@media screen and (max-width: 830px) {
-    
-}
